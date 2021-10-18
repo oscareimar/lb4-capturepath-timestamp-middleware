@@ -74,3 +74,37 @@ async handle(context: RequestContext) {
     }
   }
 ```
+## Capturas de Pantalla
+- GET /users
+
+![image](https://user-images.githubusercontent.com/90016609/137668237-3d01db06-d998-405e-89db-0e6dd4877233.png)
+
+- POST /users
+
+```sh
+{
+  "username": "eimar",
+  "email": "eimar@hotmail.com",
+  "password": "1234567"
+}
+```
+
+![image](https://user-images.githubusercontent.com/90016609/137668410-6c103b16-39b6-4003-8392-3ecf7cfea1b4.png)
+
+- PUT /users/{id}
+
+```sh
+{
+  "username": "eimar",
+  "email": "eimar@hotmail.com",
+  "password": "8888888",
+  "createdAt": "2021-10-18T04:14:33.000Z"
+}
+``` 
+![image](https://user-images.githubusercontent.com/90016609/137668678-1af1c1e5-6aef-481a-ac71-b13a98485a27.png)
+
+![image](https://user-images.githubusercontent.com/90016609/137668775-016082ca-d333-4e4f-888e-e0129928ad59.png)
+
+- **Captura de los Path**
+
+![image](https://user-images.githubusercontent.com/90016609/137668843-ccc336c1-81fc-4496-92f1-fd42d3aa37ba.png)
