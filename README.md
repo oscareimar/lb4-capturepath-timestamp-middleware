@@ -1,4 +1,4 @@
-# Loopback 4 - Captura de path y establecimiento de timestapms mediante middleware
+# Loopback 4 - Captura de path y establecimiento de timestamps mediante middleware
 
 Esta aplicacion esta desarrollada para la creacion de API REST de una tabla User, ademas cuenta con dos caracteristicas los cuales se describen a continuacion:
 - Se obtienen todos los path de los request y se muestran en consola
@@ -18,6 +18,24 @@ Para instalar solo las dependencias resueltas en `package-lock.json`:
 
 ```sh
 npm ci
+```
+
+## Otros requisitos
+
+Se debe tener un servicio de MongoDB para la Base de datos y personalizar los parametros de conexion en el archivo: `src/datasources/mongo.datasource.ts`
+
+```sh
+const config = {
+  name: 'mongo',
+  connector: 'mongodb',
+  url: '',
+  host: 'localhost',
+  port: 27017,
+  user: '',
+  password: '',
+  database: 'DB01',
+  useNewUrlParser: true
+};
 ```
 
 ## Ejecutar la Aplicacion
